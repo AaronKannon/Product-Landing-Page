@@ -21,6 +21,8 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     width: 100%;
 }
 
@@ -119,29 +121,31 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .container {
     display: inherit;
     align-items: inherit;
     justify-content: center;
-    width: 70%;
-    margin-bottom: 50px;
+    width: 40%;
+    padding: 20px;
 }
 
 .icon {
     display: inherit;
     align-items: inherit;
     justify-content: inherit;
-    width: 150px;
     color: #602DB4;
-    font-size: 18px;
+    width: 30%;
 }
 
 .inform {
     display: inherit;
     flex-direction: column;
     justify-content: inherit;
+    text-align: justify;
+    width: 70%;
 }
 
 .titlebox {
@@ -153,4 +157,50 @@ li {
 .descriptionbox {
     margin: 0;
     padding: 0;
+}
+
+#videobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    background: linear-gradient(-45deg, #6930C3, #A27CDE, #462183, #B99DE7);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+#textvideo {
+    padding: 10px 0 10px 0;
+}
+
+#video {
+    width: 33%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 0 30px 0;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.item {
+    border: 1px solid #6930C3;
+    width: 30%;
+    height: 70%;
 }
