@@ -1,6 +1,13 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 #header {
@@ -8,10 +15,13 @@ body {
     position: fixed;
     align-items: center;
     background-color: #6930C3;
-    color: white;
     width: 100%;
     padding: 16px;
     margin: 0;
+}
+
+.logo {
+    width: 100%;
 }
 
 #header-img {
@@ -19,6 +29,15 @@ body {
 }
 
 #nav-bar {}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5E60CE;
+}
 
 ul {
     display: flex;
@@ -39,5 +58,99 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 350px;
+}
+
+#description {
+    width: 40%;
+    font-size: 20px;
+    text-align: center;
+}
+
+#email {
+    width: 300px;
+    padding: 10px;
+    font-family: inherit;
+    margin-bottom: 20px;
+}
+
+#submit {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+}
+
+#buttonnews {
+    width: 210px;
+    height: 40px;
+    font-family: inherit;
+    background: #6930C3;
+    color: white;
+    border: 1px solid #6930C3;
+    border-radius: 5px;
+}
+
+#buttonnews:hover {
+    animation-name: button;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes button {
+    20% {
+        background: #602DB4;
+    }
+    40% {
+        background: #5829A3;
+    }
+    60% {
+        background: #462183;
+    }
+    80% {
+        background: #5829A3;
+    }
+    100% {
+        background: #6930C3;
+    }
+}
+
+#advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: inherit;
+    align-items: inherit;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.icon {
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    width: 150px;
+    color: #602DB4;
+    font-size: 18px;
+}
+
+.inform {
+    display: inherit;
+    flex-direction: column;
+    justify-content: inherit;
+}
+
+.titlebox {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.descriptionbox {
+    margin: 0;
+    padding: 0;
 }
