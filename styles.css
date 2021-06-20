@@ -301,3 +301,102 @@ span {
     width: fit-content;
     float: right;
 }
+
+@media (max-width: 1440px) {
+    .container {
+        width: 60%;
+    }
+    #video {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #pricing {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 900px) {
+    #description {
+        width: 80%;
+    }
+    #video {
+        width: 80%;
+    }
+    #pricing {
+        width: 100%;
+        margin-left: 0%;
+    }
+    #footer-center {
+        width: 90%;
+    }
+}
+
+@media (max-width: 720px) {
+    .logo {
+        width: 60%;
+    }
+    #nav-bar {
+        width: 40%;
+    }
+    #textvideo {
+        text-align: center;
+    }
+    .container {
+        width: 90%;
+    }
+    .icon {
+        width: 0%;
+        margin-right: 15%;
+    }
+    #pricing {
+        flex-direction: column;
+    }
+    .item {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo {
+        width: 40%;
+    }
+    #nav-bar {
+        width: 60%;
+    }
+    #newsletter {
+        height: 400px;
+    }
+    #video {
+        width: 100%;
+    }
+    #menu {
+        flex-direction: column;
+        float: right;
+        margin-right: 1.25rem;
+    }
+    #header-img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 350px) {
+    #newsletter {
+        height: 450px;
+    }
+    #footer-center {
+        width: 95%;
+    }
+    #footer-logo {
+        width: 20%;
+    }
+    #links-center {
+        width: 80%;
+    }
+}
+
+
+/*Criar os Medias*/
